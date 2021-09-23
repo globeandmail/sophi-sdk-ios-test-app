@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C61652CF26FD1E8B0029B159 /* SnowplowTracker in Frameworks */ = {isa = PBXBuildFile; productRef = C61652CE26FD1E8B0029B159 /* SnowplowTracker */; settings = {ATTRIBUTES = (Required, ); }; };
+		C61652D026FD259B0029B159 /* SophiSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C61652C926FD1E320029B159 /* SophiSDK.xcframework */; };
+		C61652D126FD259B0029B159 /* SophiSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C61652C926FD1E320029B159 /* SophiSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C656451826E9B2C2002693F9 /* SophiAppleTVAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C656451726E9B2C2002693F9 /* SophiAppleTVAppApp.swift */; };
+		C656451A26E9B2C2002693F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C656451926E9B2C2002693F9 /* ContentView.swift */; };
+		C656451C26E9B2C3002693F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C656451B26E9B2C3002693F9 /* Assets.xcassets */; };
+		C656451F26E9B2C3002693F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C656451E26E9B2C3002693F9 /* Preview Assets.xcassets */; };
+		C656452926E9B3B3002693F9 /* Metrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E2605A2671AAB50021ADFE /* Metrics.swift */; };
+		C6E260472671A95B0021ADFE /* SophiTestAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E260462671A95B0021ADFE /* SophiTestAppApp.swift */; };
+		C6E260492671A95B0021ADFE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E260482671A95B0021ADFE /* ContentView.swift */; };
+		C6E2604B2671A95C0021ADFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6E2604A2671A95C0021ADFE /* Assets.xcassets */; };
+		C6E2604E2671A95C0021ADFE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6E2604D2671A95C0021ADFE /* Preview Assets.xcassets */; };
+		C6E2605B2671AAB50021ADFE /* Metrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E2605A2671AAB50021ADFE /* Metrics.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C61652D226FD259B0029B159 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C61652D126FD259B0029B159 /* SophiSDK.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C656452826E9B3A9002693F9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C61652C926FD1E320029B159 /* SophiSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SophiSDK.xcframework; sourceTree = "<group>"; };
+		C656451526E9B2C2002693F9 /* SophiAppleTVApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SophiAppleTVApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C656451726E9B2C2002693F9 /* SophiAppleTVAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SophiAppleTVAppApp.swift; sourceTree = "<group>"; };
+		C656451926E9B2C2002693F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C656451B26E9B2C3002693F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C656451E26E9B2C3002693F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C656452026E9B2C3002693F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6E260432671A95B0021ADFE /* SophiTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SophiTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6E260462671A95B0021ADFE /* SophiTestAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SophiTestAppApp.swift; sourceTree = "<group>"; };
+		C6E260482671A95B0021ADFE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C6E2604A2671A95C0021ADFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C6E2604D2671A95C0021ADFE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C6E2604F2671A95C0021ADFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6E2605A2671AAB50021ADFE /* Metrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metrics.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C656451226E9B2C2002693F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6E260402671A95B0021ADFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C61652D026FD259B0029B159 /* SophiSDK.xcframework in Frameworks */,
+				C61652CF26FD1E8B0029B159 /* SnowplowTracker in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C656451626E9B2C2002693F9 /* SophiAppleTVApp */ = {
+			isa = PBXGroup;
+			children = (
+				C656451726E9B2C2002693F9 /* SophiAppleTVAppApp.swift */,
+				C656451926E9B2C2002693F9 /* ContentView.swift */,
+				C656451B26E9B2C3002693F9 /* Assets.xcassets */,
+				C656452026E9B2C3002693F9 /* Info.plist */,
+				C656451D26E9B2C3002693F9 /* Preview Content */,
+			);
+			path = SophiAppleTVApp;
+			sourceTree = "<group>";
+		};
+		C656451D26E9B2C3002693F9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C656451E26E9B2C3002693F9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C6E2603A2671A95B0021ADFE = {
+			isa = PBXGroup;
+			children = (
+				C61652C926FD1E320029B159 /* SophiSDK.xcframework */,
+				C6E260452671A95B0021ADFE /* SophiTestApp */,
+				C656451626E9B2C2002693F9 /* SophiAppleTVApp */,
+				C6E260442671A95B0021ADFE /* Products */,
+				C6E260552671AA860021ADFE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C6E260442671A95B0021ADFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6E260432671A95B0021ADFE /* SophiTestApp.app */,
+				C656451526E9B2C2002693F9 /* SophiAppleTVApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6E260452671A95B0021ADFE /* SophiTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				C6E260462671A95B0021ADFE /* SophiTestAppApp.swift */,
+				C6E260482671A95B0021ADFE /* ContentView.swift */,
+				C6E2604A2671A95C0021ADFE /* Assets.xcassets */,
+				C6E2604F2671A95C0021ADFE /* Info.plist */,
+				C6E2604C2671A95C0021ADFE /* Preview Content */,
+				C6E2605A2671AAB50021ADFE /* Metrics.swift */,
+			);
+			path = SophiTestApp;
+			sourceTree = "<group>";
+		};
+		C6E2604C2671A95C0021ADFE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C6E2604D2671A95C0021ADFE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C6E260552671AA860021ADFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C656451426E9B2C2002693F9 /* SophiAppleTVApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C656452326E9B2C3002693F9 /* Build configuration list for PBXNativeTarget "SophiAppleTVApp" */;
+			buildPhases = (
+				C656451126E9B2C2002693F9 /* Sources */,
+				C656451226E9B2C2002693F9 /* Frameworks */,
+				C656451326E9B2C2002693F9 /* Resources */,
+				C656452826E9B3A9002693F9 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SophiAppleTVApp;
+			packageProductDependencies = (
+			);
+			productName = SophiAppleTVApp;
+			productReference = C656451526E9B2C2002693F9 /* SophiAppleTVApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C6E260422671A95B0021ADFE /* SophiTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6E260522671A95C0021ADFE /* Build configuration list for PBXNativeTarget "SophiTestApp" */;
+			buildPhases = (
+				C6E2603F2671A95B0021ADFE /* Sources */,
+				C6E260402671A95B0021ADFE /* Frameworks */,
+				C6E260412671A95B0021ADFE /* Resources */,
+				C61652D226FD259B0029B159 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SophiTestApp;
+			packageProductDependencies = (
+				C61652CE26FD1E8B0029B159 /* SnowplowTracker */,
+			);
+			productName = PoplinTestApp;
+			productReference = C6E260432671A95B0021ADFE /* SophiTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6E2603B2671A95B0021ADFE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					C656451426E9B2C2002693F9 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					C6E260422671A95B0021ADFE = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = C6E2603E2671A95B0021ADFE /* Build configuration list for PBXProject "SophiTestApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C6E2603A2671A95B0021ADFE;
+			packageReferences = (
+				C61652CD26FD1E8B0029B159 /* XCRemoteSwiftPackageReference "snowplow-objc-tracker" */,
+			);
+			productRefGroup = C6E260442671A95B0021ADFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6E260422671A95B0021ADFE /* SophiTestApp */,
+				C656451426E9B2C2002693F9 /* SophiAppleTVApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C656451326E9B2C2002693F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C656451F26E9B2C3002693F9 /* Preview Assets.xcassets in Resources */,
+				C656451C26E9B2C3002693F9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6E260412671A95B0021ADFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6E2604E2671A95C0021ADFE /* Preview Assets.xcassets in Resources */,
+				C6E2604B2671A95C0021ADFE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C656451126E9B2C2002693F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C656451A26E9B2C2002693F9 /* ContentView.swift in Sources */,
+				C656451826E9B2C2002693F9 /* SophiAppleTVAppApp.swift in Sources */,
+				C656452926E9B3B3002693F9 /* Metrics.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6E2603F2671A95B0021ADFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6E260492671A95B0021ADFE /* ContentView.swift in Sources */,
+				C6E2605B2671AAB50021ADFE /* Metrics.swift in Sources */,
+				C6E260472671A95B0021ADFE /* SophiTestAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C656452126E9B2C3002693F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SophiAppleTVApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 482G2TPYWQ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SophiAppleTVApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sophi.tracker.tvos.SophiAppleTVApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 14.5;
+			};
+			name = Debug;
+		};
+		C656452226E9B2C3002693F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SophiAppleTVApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 482G2TPYWQ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SophiAppleTVApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sophi.tracker.tvos.SophiAppleTVApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 14.5;
+			};
+			name = Release;
+		};
+		C6E260502671A95C0021ADFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C6E260512671A95C0021ADFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C6E260532671A95C0021ADFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SophiTestApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 482G2TPYWQ;
+				ENABLE_PREVIEWS = YES;
+				"EXCLUDED_ARCHS[sdk=iphoneos*]" = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/**",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SophiTestApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sophi.ios-tracker-test-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = NO;
+			};
+			name = Debug;
+		};
+		C6E260542671A95C0021ADFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SophiTestApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 482G2TPYWQ;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/**",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SophiTestApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sophi.ios-tracker-test-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C656452326E9B2C3002693F9 /* Build configuration list for PBXNativeTarget "SophiAppleTVApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C656452126E9B2C3002693F9 /* Debug */,
+				C656452226E9B2C3002693F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6E2603E2671A95B0021ADFE /* Build configuration list for PBXProject "SophiTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6E260502671A95C0021ADFE /* Debug */,
+				C6E260512671A95C0021ADFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6E260522671A95C0021ADFE /* Build configuration list for PBXNativeTarget "SophiTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6E260532671A95C0021ADFE /* Debug */,
+				C6E260542671A95C0021ADFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C61652CD26FD1E8B0029B159 /* XCRemoteSwiftPackageReference "snowplow-objc-tracker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/snowplow/snowplow-objc-tracker";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C61652CE26FD1E8B0029B159 /* SnowplowTracker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C61652CD26FD1E8B0029B159 /* XCRemoteSwiftPackageReference "snowplow-objc-tracker" */;
+			productName = SnowplowTracker;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C6E2603B2671A95B0021ADFE /* Project object */;
+}

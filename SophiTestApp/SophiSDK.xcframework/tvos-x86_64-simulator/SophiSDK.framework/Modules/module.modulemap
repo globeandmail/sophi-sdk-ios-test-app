@@ -1,0 +1,11 @@
+framework module SophiSDK {
+  umbrella header "SophiSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module SophiSDK.Swift {
+    header "SophiSDK-Swift.h"
+    requires objc
+}
