@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C61652CF26FD1E8B0029B159 /* SnowplowTracker in Frameworks */ = {isa = PBXBuildFile; productRef = C61652CE26FD1E8B0029B159 /* SnowplowTracker */; settings = {ATTRIBUTES = (Required, ); }; };
-		C61652D026FD259B0029B159 /* SophiSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C61652C926FD1E320029B159 /* SophiSDK.xcframework */; };
-		C61652D126FD259B0029B159 /* SophiSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C61652C926FD1E320029B159 /* SophiSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C61652D526FD82360029B159 /* SophiSDKTracker in Frameworks */ = {isa = PBXBuildFile; productRef = C61652D426FD82360029B159 /* SophiSDKTracker */; };
+		C61652DA26FD862A0029B159 /* SophiSDKTracker in Frameworks */ = {isa = PBXBuildFile; productRef = C61652D926FD862A0029B159 /* SophiSDKTracker */; };
 		C656451826E9B2C2002693F9 /* SophiAppleTVAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C656451726E9B2C2002693F9 /* SophiAppleTVAppApp.swift */; };
 		C656451A26E9B2C2002693F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C656451926E9B2C2002693F9 /* ContentView.swift */; };
 		C656451C26E9B2C3002693F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C656451B26E9B2C3002693F9 /* Assets.xcassets */; };
@@ -29,7 +28,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C61652D126FD259B0029B159 /* SophiSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,7 +45,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C61652C926FD1E320029B159 /* SophiSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SophiSDK.xcframework; sourceTree = "<group>"; };
 		C656451526E9B2C2002693F9 /* SophiAppleTVApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SophiAppleTVApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C656451726E9B2C2002693F9 /* SophiAppleTVAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SophiAppleTVAppApp.swift; sourceTree = "<group>"; };
 		C656451926E9B2C2002693F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C61652DA26FD862A0029B159 /* SophiSDKTracker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,8 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C61652D026FD259B0029B159 /* SophiSDK.xcframework in Frameworks */,
-				C61652CF26FD1E8B0029B159 /* SnowplowTracker in Frameworks */,
+				C61652D526FD82360029B159 /* SophiSDKTracker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +103,6 @@
 		C6E2603A2671A95B0021ADFE = {
 			isa = PBXGroup;
 			children = (
-				C61652C926FD1E320029B159 /* SophiSDK.xcframework */,
 				C6E260452671A95B0021ADFE /* SophiTestApp */,
 				C656451626E9B2C2002693F9 /* SophiAppleTVApp */,
 				C6E260442671A95B0021ADFE /* Products */,
@@ -169,6 +165,7 @@
 			);
 			name = SophiAppleTVApp;
 			packageProductDependencies = (
+				C61652D926FD862A0029B159 /* SophiSDKTracker */,
 			);
 			productName = SophiAppleTVApp;
 			productReference = C656451526E9B2C2002693F9 /* SophiAppleTVApp.app */;
@@ -189,7 +186,7 @@
 			);
 			name = SophiTestApp;
 			packageProductDependencies = (
-				C61652CE26FD1E8B0029B159 /* SnowplowTracker */,
+				C61652D426FD82360029B159 /* SophiSDKTracker */,
 			);
 			productName = PoplinTestApp;
 			productReference = C6E260432671A95B0021ADFE /* SophiTestApp.app */;
@@ -222,7 +219,7 @@
 			);
 			mainGroup = C6E2603A2671A95B0021ADFE;
 			packageReferences = (
-				C61652CD26FD1E8B0029B159 /* XCRemoteSwiftPackageReference "snowplow-objc-tracker" */,
+				C61652D326FD82360029B159 /* XCRemoteSwiftPackageReference "ios-tracker-spm" */,
 			);
 			productRefGroup = C6E260442671A95B0021ADFE /* Products */;
 			projectDirPath = "";
@@ -529,21 +526,26 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C61652CD26FD1E8B0029B159 /* XCRemoteSwiftPackageReference "snowplow-objc-tracker" */ = {
+		C61652D326FD82360029B159 /* XCRemoteSwiftPackageReference "ios-tracker-spm" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/snowplow/snowplow-objc-tracker";
+			repositoryURL = "https://github.com/poplindata/ios-tracker-spm";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.2.2;
+				minimumVersion = 1.0.8;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C61652CE26FD1E8B0029B159 /* SnowplowTracker */ = {
+		C61652D426FD82360029B159 /* SophiSDKTracker */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C61652CD26FD1E8B0029B159 /* XCRemoteSwiftPackageReference "snowplow-objc-tracker" */;
-			productName = SnowplowTracker;
+			package = C61652D326FD82360029B159 /* XCRemoteSwiftPackageReference "ios-tracker-spm" */;
+			productName = SophiSDKTracker;
+		};
+		C61652D926FD862A0029B159 /* SophiSDKTracker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C61652D326FD82360029B159 /* XCRemoteSwiftPackageReference "ios-tracker-spm" */;
+			productName = SophiSDKTracker;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
